@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content=" text/html; charset=utf-8 "> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мистецтво кондитерства</title>
+  <link rel="stylesheet" href="Sara Kichkovska styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Мистецтво кондитерства</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="index2.html">Про мене</a></li>
+          <li><a href="index3.html">Рецепти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      
+      
+  
+      <header class="w3-container w3-teal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Зверніть увагу!</h2>
+      </header>
+  
+      <div class="w3-container">
+        <p>Протягом цього тижня діє цікава пропозиція!</p>
+      </div>
+  
+      <footer class="w3-container w3-teal">
+        <p>Знявши відео з одним з моїх рецептів та скинувши його мені в повідомлення, у вас буде змога поспілкуватись зі мною та дати завдання щодо приготування наступного тортику!</p>
+      </footer>
+  
+    </div>
+  </div>
+  <style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
+    <body>
+    
+    <h3>Заповніть форму</h3>
+    
+    <div>
+      <form action="/action_page.php">
+        <label for="fname">Ім'я</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Фамілія</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Країна</label>
+        <select id="country" name="country">
+          <option value="ukraine">Україна</option>
+          <option value="slovakia">Словаччина</option>
+          <option value="austria">Австрія</option>
+          <option value="czech republic">Чехія</option>
+          <option value="germani">Германія</option>
+          <option value="poland">Польща</option>
+          <option value="rumenia">Румунія</option>
+          <option value="spanish">Іспанія</option>
+          <option value="itali">Італія</option>
+        </select>
+      
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+    </body>
+ 
+  <main>
+    <style type="text/css">
+    body {
+  font-family: Comic Sans MS, sans-serif;
+  margin: 0;
+  padding: 0;
+ }
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(236, 114, 202, 0.6);
+}
+
+.modal-content {
+  background-color: #ef8fa2;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #aa2d46;
+  width: 80%;
+}
+
+.close {
+  color: #c352cb;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: mauve;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  color: rgb(129, 22, 86);
+  text-shadow: 1px 1px 2px rgb(129, 22, 86), 0 0 25px rgb(245, 47, 166), 0 0 5px rgb(200, 10, 98);
+}
+
+header {
+  background-color: #eeafaf;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #c327bd;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a7a7f7; /* Синій колір при наведенні */
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #8cd5ed;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .menu {
+  flex: 1;
+}
+
+footer .menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .menu ul li {
+  margin-bottom: 10px;
+}
+
+footer .menu ul li a {
+  color: #fdd9d9;
+  text-decoration: none;
+}
+
+.flex-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.block {
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #ee7ce3;
+}
+
+.block h3 {
+  color: #9079db;
+}
+</style>
+
+
+  
+      <style>
+    
+        div {
+          text-align: center;
+        }
+      </style>
+       <section id="home"> 
+      <div>
+        <h1>Привіт!</h1>
+        <p>Готуйте найсмачніші десерти разом зі мною!</p>
+        <img src="WhatsApp Image 2024-05-12 at 6.57.28 PM.jpeg" alt="Зображення 2">
+      </section>
+      </div>
+   
+
+      <style>
+       
+        div {
+          text-align: center;
+        }
+      </style>
+       <section id="about">
+      <div>
+        <h2>Хто я?</h2>
+        <p>Я кондитер-початківець, ділюся з вами своїми вдалими рецептами тортиків і десертів!</p>
+        <img src="WhatsApp Image 2024-05-12 at 5.01.44 PM.jpeg" alt="Зображення 2">
+      </section>
+      </div>
+      
+   
+   
+  </main>
+  <div class="flex-block">
+        <div class="block">
+          <h3>Факт 1</h3>
+          <p>Торт на своє 16-річчя,я приготувала торт, який загалом важив 12 кілограм.
+            Я не очікувала, що він вийде таким великим і тяжким. Робила його 2 дня з допомогою. Це був чудовий досвід!</p>
+
+        </div>
+        <div class="block">
+          <h3>Факт 2</h3>
+          <p>Одного разу, на день мами, я спробувала приготувати торт з трьома начинками, хоча вважала що він не дуже вийде і це буде перебор, але настравді це вийшло дуже смачно і незвичайно ( абрикосовий конфітюр, шоколадний мус, солона карамель з арахісом). Рекомендую тестувати все!</p>
+        </div>
+        <div class="block">
+          <h3>Факт 3</h3>
+          <p>Роблячи десерти, я помітила, що для багатьох тортів потрібні тільки білки і я довго думала, що ж цікавого можна зробити з жовтками. І от бабуся мені порекомендувала спробувати її рецепт, про який мало хто знає - це рецепт колобків ( варені жовтки, масло мука- тісто; зробити шаріки і запекти в духовці та политі шоколадом, в середину можна ще додати горішок) 
+            *Якшо що, жовток варила в одноразовому кульочкк в кіпяченій воді.</p>
+        </div>
+      </div>
+
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: cake, cake; cake:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+        
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+        </head>
+        <style>
+          * {box-sizing: border-box}
+          body {font-family: Verdana, sans-serif; margin:0}
+          .mySlides {display: none}
+          img {vertical-align: middle;}
+          
+          /* Slideshow container */
+          .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+          }
+          
+          /* Next & previous buttons */
+          .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+          }
+          
+          /* Position the "next button" to the right */
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+          
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+          }
+          
+          /* Caption text */
+          .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+          }
+          
+          /* Number text (1/3 etc) */
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+          
+          /* The dots/bullets/indicators */
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+          
+          .active, .dot:hover {
+            background-color: #717171;
+          }
+          
+          /* Fading animation */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          
+          @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+          }
+          
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+          }
+          </style>
+          </head>
+          <head>
+            <style>
+            div.gallery {
+              margin: 5px;
+              border: 1px solid #ccc;
+              float: left;
+              width: 180px;
+            }
+            
+            div.gallery:hover {
+              border: 1px solid #777;
+            }
+            
+            div.gallery img {
+              width: 100%;
+              height: auto;
+            }
+            
+            div.desc {
+              padding: 15px;
+              text-align: center;
+            }
+            </style>
+            </head>
+            
+        
+       <h1>Чудові рецепти, щиро рекомендую!</h1>
+
+       <p><a href="https://klopotenko.com/reczepti/">Натискай!</a></p>
+
+       <body>
+            
+        <div class="gallery">
+          <a target="_blank" href="1715544268265970.jpg">
+            <img src="1715544268265970.jpg" alt="Яблучний пиріг" width="1000" height="1000">
+          </a>
+          <div class="desc">Яблучний пиріг</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="1715544283803784.jpg">
+            <img src="1715544283803784.jpg" alt="Вафельний торт" width="1000" height="600">
+          </a>
+          <div class="desc">Вафельний торт</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="171554427693584.jpg">
+            <img src="171554427693584.jpg" alt="Тірамісу" width="1000" height="600">
+          </a>
+          <div class="desc">Тірамісу</div>
+        </div>
+        <div class="gallery">
+          <a target="_blank" href="1715800543595684.jpg">
+            <img src="1715800543595684.jpg" alt="Меренговий рулет" width="1000" height="600">
+          </a>
+          <div class="desc">Меренговий рулет</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="1715800741441586.jpg">
+            <img src="1715800741441586.jpg" alt="Сінабони" width="1000" height="600">
+          </a>
+          <div class="desc">Сінабони</div>
+        </div>
+        
+        <div class="gallery">
+          <a target="_blank" href="1715800738922905.jpg">
+            <img src="1715800738922905.jpg" alt="Шоколадний фондан" width="1000" height="600">
+          </a>
+          <div class="desc">Шоколадний фондан</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="PHOTO-2024-05-12-19-45-05.jpg">
+            <img src="PHOTO-2024-05-12-19-45-05.jpg" alt="Мафіни" width="1000" height="600">
+          </a>
+          <div class="desc">Мафіни</div>
+        </div>
+
+       
+
+        
+        
+        </body>
+
+        </body>
+        <head>
+          <style>
+          div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+          }
+          
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+          
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+          </style>
+          </head>
+          
+</div>
+
+
+<div class="container">
+  <div class="menu">
+    <h3>Додаткове Меню</h3>
+    <ul>
+      <li><a href="#">Головна</a></li>
+      <li><a href="#">Про мене</a></li>
+      <li><a href="#">Рецепти</a></li>
+    </ul>
+  </div>
+
+  <h1>Моя порада</h1>
+
+  <p id="demo">Будьте впевнені в собі!.</p>
+  
+  <script>
+  function myFunction() {
+    document.getElementById("demo").style.fontSize = "25px"; 
+    document.getElementById("demo").style.color = "pink";
+    document.getElementById("demo").style.backgroundColor = "yellow";        
+  }
+  </script>
+  
+  <button type="button" onclick="myFunction()">Натисніть!</button>
+
+      <section id="contact">
+      <h2>Контакти</h2>
+      <p>Контактні дані (для звя'зку зі мною):</p>
+      <ul>
+<li>Email: sarahkickovska@gmail.com</li>
+        <li>Телефон: +380 095 865 39 97</li>
+      </ul>
+    </section>
+    </div>
+  </footer>
+</body>
+</html>
